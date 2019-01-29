@@ -3,7 +3,7 @@
 
     eureka-service:
       image: eurekaservice-app
-      build: eureka-server/
+      build: eureka (1)/
       restart: always
       network_mode: host
       container_name: eureka-service-docker
@@ -41,7 +41,7 @@
         - 8085
     muzizapplication:
       image: trackservice-app
-      build: Music-Web-App/
+      build: music/
       restart: always
       network_mode: host
       container_name: track-service-docker
